@@ -185,3 +185,202 @@
 // export default App
 
 
+
+// State is a data that React components stores and manage itself. 
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <h1>Count : {count}</h1>    
+
+//       <button onClick={() => setCount(count + 1)}>
+//         Increase
+//       </button>
+
+//       <button onClick={() => setCount(count - 1)}>
+//         Decrease
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App
+
+// 1.State with a numbers
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [count, setCount] = useState(0);
+//   return (
+//     <div>
+//       <h1>Count: {count}</h1>
+
+//       <button onClick={() => setCount(count + 1)}>
+//         Increase
+//       </button>
+
+//       <button onClick={() => setCount(count - 1)}>
+//         Decrease
+//       </button>
+
+//       <button onClick={() => setCount(0)}>
+//         Reset
+//       </button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// 2.State with a String
+
+// import {useState} from 'react'
+
+// function App() {
+//   const [name, setName] = useState("Ram");
+  
+//   return (
+//     <div>
+//       <h1>Hello {name}</h1>
+
+//       <button onClick={() => setName("Shyam")}>
+//         Change Name
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App
+
+
+// 3.State with Boolean
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [isVisible, setIsVisible] = useState(true);
+
+//   return (
+//     <div>
+//       {isVisible && <h1>Hello Ram</h1>}
+
+//       <button onClick={() => setIsVisible(!isVisible)}>
+//         Show / Hide 
+//         </button>    
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [name, setName] = useState("");
+
+//   return (
+//     <div>
+//       <input type="text" value={name} onChange={(e) => setName(e.target.value)}
+//       placeholder='Enter Your Name' />    
+
+//       <h1>Your name is {name}</h1>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// 5.State with a Form
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+
+//   function handleSubmit(e) {
+//     e.preventDefault();
+
+//     console.log(name);
+//     console.log(email);
+//   }
+//   return (
+//       <form onSubmit={handleSubmit}>
+//         <input type="text" placeholder='Name' value={name}
+//         onChange={(e) => setName(e.target.value)} />
+
+//         <input type="text" placeholder='Email' value={email}
+//         onChange={(e) => setEmail(e.target.value)} />
+
+//         <button type='submit'>Submit</button>
+//       </form>
+//   )
+// }
+
+// export default App
+
+
+// 6.State with an Array
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [fruits, setFruits] = useState(["Apple", "Banana"]);
+
+//   return (
+//     <div>
+//       {fruits.map((fruit) => (
+//         <p key={fruit}>{fruit}</p>
+//       ))}    
+
+//       <button onClick={() => setFruits([...fruits, "Mango",])}>
+//         Add Mango
+//       </button>
+//       <button onClick={() => setFruits([...fruits, "Orange"])}>
+//         Add Orange
+//       </button>
+//       <button onClick={() => setFruits([...fruits, "Pineapple"])}>
+//         Add Pineapple
+//       </button>
+
+//     </div>
+//   );
+// }
+
+// export default App
+
+
+// 7.State with Object
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [user, setUser] = useState({
+//     name:"Ram",
+//     age: 22
+//   });
+//   return (
+//     <div>
+//      <h2>{user.name}</h2> 
+//      <p>{user.age}</p>
+
+//      <button onClick={() => setUser({...user, age: user.age + 1})}>
+//       Increase Age
+//      </button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
