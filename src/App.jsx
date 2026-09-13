@@ -384,3 +384,137 @@
 
 
 
+// useEffect
+
+// import React from 'react'
+
+// function App() {
+//   useEffect(() => {
+//     document.title = "My React";
+//   }, []);
+
+//   return (
+// <h1>Hello Ram</h1>
+//   )
+// }
+
+// export default App
+
+// 1.useEffect with State
+
+// import React from 'react'
+
+// function App() {
+//   useEffect(() => {
+//     console.log("Hello useEffect");
+//   }, []);
+//   return <h1>Hello Ram</h1>
+// }
+
+// export default App
+
+
+// 2.useEffect with multiple dependencies
+
+// import React from 'react'
+
+// function App() {
+// const [name, setName] = useState("");
+// const [age, setAge] = useState(20);
+// useEffect(() => {
+//   console.log("Name or age changed");
+// }, [name, age]);
+
+//   return (
+//     <div>
+//       <input
+//       value={name} 
+//       onChange={(e) => setName(e.target.value)}
+//       placeholder="Name"/>
+
+//       <button onClick={() => setAge(age + 1)}>
+//         Age : {age}
+//       </button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// 3.useEffect for API calls
+
+// import React from 'react'
+
+// function App() {
+//   const [users, setUser] = useState([]);
+
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       setUser(data);
+//     });
+//   }, []);
+
+//   return (
+//     <div>
+//       <h1>Users</h1>
+
+//       {users.map((user) => (
+//         <p key = {user.id}>{user.name}</p>
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default App
+
+
+// 4.useEffect for browser title
+
+// import React from 'react'
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     document.title = `Count: ${count}`;
+//   }, [count]);
+
+//   return (
+//     <div>
+//       <h1>Count: {count}</h1>
+
+//       <button onClick={() => setCount(count + 1)}>
+//         Increase
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App
+
+
+// 5.useEffect for Timer
+
+// import React from 'react'
+
+// function App() {
+//   const [seconds, setSeconds] = useState(0);
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       setSeconds((previous) => previous + 1);
+//     }, 2000);
+//   return () => {
+//     clearInterval(timer);
+//   };
+// }, []);
+
+// return <h1>Seconds: {seconds}</h1>
+// }
+
+// export default App
+
+
+
+
