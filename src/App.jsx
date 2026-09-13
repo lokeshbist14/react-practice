@@ -135,3 +135,53 @@
 // export default App
 
 
+
+// Props
+// Props are to pass data from parents component to child components
+
+// import React from 'react'
+// import Profile from './Profile'
+
+// function App() {
+//   return (
+//     <div>
+//       <Profile name = "Ram" age = {22}/>
+//       <Profile name = "Shyam" age = {23}/>
+//       <Profile name = "Sita" age = {24}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// Destructuring Props
+
+// function Profile({name, age}) {
+//   return (
+//     <>
+//     <h2>{name}</h2>
+//     <p>Age : {age}</p>
+//     </>
+//   )
+// }
+
+
+// Real Wrold Example : Product Card
+
+// import React from 'react'
+// import Product from './Product'
+
+// function App() {
+//   return (
+//     <div>
+//       <Product name = "iphone 17 pro max" price = {1999} />
+//       <Product name = "Samsung S24 Ultra" price = {1899} />
+//       <Product name = "MacBook Air" price = {1499} />
+//     </div>
+//   );
+// }
+
+// export default App
+
+
